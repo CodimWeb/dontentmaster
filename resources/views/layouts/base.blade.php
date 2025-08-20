@@ -75,7 +75,7 @@
                     <div class="footer-panel">
                         <div class="footer-logo">
                             <a href="/">
-                                <img src="{{ Vite::asset('resources/img/logo-footer.png') }}" alt="">
+                                <img src="{{ Vite::asset('resources/img/logo-footer.webp') }}" alt="">
                             </a>
                         </div>
                         <ul class="footer-nav">
