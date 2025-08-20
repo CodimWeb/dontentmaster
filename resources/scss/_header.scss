@@ -1,0 +1,140 @@
+.header {
+    background: #fff;
+    padding: 10px 0 12px;
+    //border-bottom: 1px solid #e5eaf3;
+    box-shadow: 0 0 12px -2px rgba(0, 0, 0, .2);
+}
+
+.header-panel {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 200px;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar .nav-item {
+    margin-right: 15px;
+}
+
+.navbar .nav-link {
+    font-family: $OS-SB;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-phone {
+    margin-left: 40px;
+}
+
+.header-phone svg {
+    width: 18px;
+    height: auto;
+    color: #333;
+    margin-top: -3px;
+    margin-right: -3px;
+    transform: rotateZ(7deg);
+}
+
+.header-phone a {
+    color: #333;
+    text-decoration: none;
+    font-family: $OS-SB;
+    font-size: 18px;
+
+    &:hover {
+        color: #333;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-logo {
+        max-width: 170px;
+    }
+
+    .navbar .nav-item {
+        margin-right: 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 15px;
+    }
+
+    .header-phone {
+        margin-left: 20px;
+    }
+
+    .header-phone a {
+        font-size: 16px;
+    }
+
+    .header-phone svg {
+        width: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        position: relative;
+    }
+
+    .header-logo {
+        max-width: 120px;
+    }
+
+    .header-panel .container-fluid {
+        padding: 0;
+    }
+
+    .header-panel .navbar {
+        position: static;
+        order: 3;
+        padding: 0;
+    }
+
+    .header .navbar-toggler {
+        padding: 0;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 5;
+        background: #fff;
+        width: 100%;
+    }
+
+    .navbar .nav-link {
+        display: block;
+        text-align: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #ebe0e0;
+    }
+
+    .navbar .nav-item:first-child .nav-link {
+        padding-top: 0;
+    }
+
+    .header-phone svg {
+        width: 14px;
+        margin-top: -1px;
+    }
+
+    .header-phone a {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,103 @@
+.block-3 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #f7f7f7;
+}
+
+.swiper-galary {
+    position: relative;
+    padding: 0 40px;
+}
+
+
+.swiper a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 75%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.swiper a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #333;
+
+
+    &:hover {
+        color: #777777;
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+}
+
+.backdrop svg {
+    width: 30px;
+    height: 30px;
+}
+
+.backdrop svg path {
+    color: #fff;
+}
+
+.swiper a:hover .backdrop {
+    opacity: 1;
+}
+
+@media (max-width: 1199px) {
+    .block-3 {
+        padding-bottom: 65px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .block-3 {
+        padding: 35px 0;
+    }
+
+    .swiper-galary {
+        padding: 0 30px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: auto;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 35px;
+    }
+}
+
+

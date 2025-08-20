@@ -1,0 +1,58 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+//BS reboot
+@import "../../node_modules/bootstrap/scss/reboot";
+
+// BS grid
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/navbar";
+// @import "../../node_modules/bootstrap/scss/collapse";
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "fonts";
+@import "button";
+@import "header";
+@import "block-1";
+@import "block-2";
+@import "block-3";
+@import "about";
+@import "block-4";
+@import "footer";
+@import "services-page";
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.row > * {
+    padding: 0 15px;
+}
+
+
