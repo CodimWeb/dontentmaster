@@ -7,6 +7,12 @@
 
 @section('description'){{$category->seo_description}}@endsection
 
+@section('og_title'){{ $category->seo_title }}@endsection
+@section('og_description'){{$category->seo_description}}@endsection
+@section('og_url'){{ route('services', ['slug' => $category->slug])}}@endsection
+@section('og_image'){{'https://dontentmaster.ru'.$category->img}}@endsection
+@section('og_site_name'){{"dontentmaster.ru - Ремонт тентов, каркасов, раздвежных механизмов, слесарно-сварочные работы в Донецке"}}@endsection
+
 @section('header')
     @parent
 @endsection

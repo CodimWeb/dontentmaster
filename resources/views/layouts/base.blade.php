@@ -8,6 +8,25 @@
         <link rel="icon" href="https://dontentmaster.ru/favicon.ico" type="image/x-icon">
         <title>@yield('title')</title>
         <meta name="description" content="@yield('description')">
+
+        <meta property="og:type" content="website">
+{{--    Заголовок статьи h1 --}}
+        <meta property="og:title" content="@yield('og_title')">
+{{--    Описание материала. Если пусто ШАБЛОН: Заголовок H1 - Имя сайта    --}}
+        <meta property="og:description" content="@yield('og_description')">
+{{--    текущий_url_материала --}}
+        <meta property="og:url" content="@yield('og_url')">
+{{--    ссылка на фото материала. Еcли нет, вставить заглушку с логотипом сайта формат jpg    --}}
+        <meta property="og:image" content="@yield('og_image')">
+{{--    Название домена или Компании и описание, чем занимается сайт--}}
+        <meta property="og:site_name" content="@yield('og_site_name')">
+{{--        <meta property="og:locale" content="{Язык. Пример: ru_RU, ru-UA, ru-KZ, ru-BY, ru-UZ, ru-TJ}" />--}}
+{{--        <meta property="article:published_time" content="{Дата размещения статьи. Формат: 2015-05-20T10:31:27+00:00}" />--}}
+{{--        <meta property="article:modified_time " content="{Дата изменения статьи. Формат: 2020-01-20T11:31:27+00:00}" />--}}
+{{--        <meta property="article:author" content="{Автор статьи, если пусто то: Название домена или Компании}" />--}}
+{{--        <meta property="article:section" content="{Категория}" />--}}
+{{--        <meta property="article:tag" content="{Тег статьи}" />--}}
+        <meta name="referrer" content="origin-when-crossorigin">
         @vite(['resources/js/app.js'])
     </head>
 @show

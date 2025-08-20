@@ -9,6 +9,12 @@
 
 @section('description'){{ $seo->seo_description }}@endsection
 
+@section('og_title'){{ $seo->seo_title }}@endsection
+@section('og_description'){{$seo->seo_description}}@endsection
+@section('og_url'){{"https://dontentmaster.ru/"}}@endsection
+@section('og_image'){{Vite::asset('resources/img/logo.png')}}@endsection
+@section('og_site_name'){{"dontentmaster.ru - Ремонт тентов, каркасов, раздвежных механизмов, слесарно-сварочные работы в Донецке"}}@endsection
+
 
 
 @section('header')
