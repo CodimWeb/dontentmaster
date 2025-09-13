@@ -37,20 +37,19 @@
             <div class="container">
                 <h2 class="title">Наши Услуги</h2>
                 <div class="row">
-                    @foreach($categories as $category)
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <a href="{{ route('services', ['slug' => $category->slug]) }}" class="services-item">
-                                <div class="services-item__img">
-                                    <img src="{{$category->img}}" alt="">
-                                </div>
-                                <div class="services-item__title">{{$category->name}}</div>
-                                <div class="services-item__show-more">
-                                    <button class="btn btn-primary">Подробнее</button>
-                                </div>
-                            </a>
-                        </div>
-                    @endforeach
-
+                @foreach($categories as $category)
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="{{ route('services', ['slug' => $category->slug]) }}" class="services-item">
+                            <div class="services-item__img">
+                                <img src="{{$category->img}}" alt="">
+                            </div>
+                            <div class="services-item__title">{{$category->name}}</div>
+                            <div class="services-item__show-more">
+                                <button class="btn btn-primary">Подробнее</button>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
                 </div>
             </div>
         </section>
@@ -156,6 +155,26 @@
                             <div class="swiper-slide">
                                 <a data-fancybox="gallery" data-src="{{ Vite::asset('resources/img/example/ex-10.webp') }}">
                                     <img src="{{ Vite::asset('resources/img/example/ex-sm-10.webp') }}" width="200" height="150" alt="" />
+                                    <div class="backdrop">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor"><path d="M15 3.5h5.5m0 0V9m0-5.5l-8 8"/><path stroke-linecap="round" d="M11.5 5.5h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-4"/></g>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" data-src="{{ Vite::asset('resources/img/example/ex-11.webp') }}">
+                                    <img src="{{ Vite::asset('resources/img/example/ex-sm-11.webp') }}" width="200" height="150" alt="" />
+                                    <div class="backdrop">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor"><path d="M15 3.5h5.5m0 0V9m0-5.5l-8 8"/><path stroke-linecap="round" d="M11.5 5.5h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-4"/></g>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" data-src="{{ Vite::asset('resources/img/example/ex-12.webp') }}">
+                                    <img src="{{ Vite::asset('resources/img/example/ex-sm-12.webp') }}" width="200" height="150" alt="" />
                                     <div class="backdrop">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                                             <g fill="none" stroke="currentColor"><path d="M15 3.5h5.5m0 0V9m0-5.5l-8 8"/><path stroke-linecap="round" d="M11.5 5.5h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-4"/></g>
